@@ -10,3 +10,4 @@ Python programming projects and concepts.
 | [Python Classes: The Power of Object-Oriented Programming](python/python-classes.md) | Comprehensive Real Python tutorial on classes, attributes, methods, inheritance, composition, ABCs, and polymorphism. | 2026-10-25 |
 | [Python's F-String for String Interpolation and Formatting](python/python-f-strings.md) | Real Python tutorial on f-strings: interpolation, formatting mini-language, performance, 3.12 improvements, and when to use traditional tools. | 2026-10-25 |
 | [Executing Python Scripts With a Shebang](python/python-shebang.md) | Real Python tutorial on shebang lines: direct script execution, portable shebangs via env, arguments, alternatives, and best practices. | 2026-10-25 |
+| [Python round() Function](python/python-round-function.md) | GeeksforGeeks reference on round(): syntax, banker's rounding, negative numbers, math/NumPy alternatives, and common errors. | 2026-10-26 |
