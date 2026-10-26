@@ -79,3 +79,4 @@ A Python programming project (version 3.2) that builds a comprehensive digital g
 - [Python Classes: The Power of Object-Oriented Programming](python-classes.md)
 - [Executing Python Scripts With a Shebang](python-shebang.md)
 - [Python round() Function](python-round-function.md)
+- [Python range() Function](python-range-function.md)

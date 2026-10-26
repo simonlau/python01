@@ -29,3 +29,7 @@
 ## [2026-10-26] ingest | Python round() Function
 - Disposition: New
 - Raw: raw/python/2026-03-20-python-round-function.md
+
+## [2026-10-26] ingest | Python range() Function
+- Disposition: New
+- Raw: raw/python/2026-03-10-python-range-function.md
