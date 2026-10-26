@@ -37,3 +37,7 @@
 ## [2026-10-26] ingest | How to Print without newline in Python
 - Disposition: New
 - Raw: raw/python/2025-04-26-python-print-without-newline.md
+
+## [2026-10-26] ingest | Python __init__ vs __new__
+- Disposition: New
+- Raw: raw/python/2025-07-23-python-init-vs-new.md

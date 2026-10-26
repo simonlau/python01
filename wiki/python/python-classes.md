@@ -85,4 +85,5 @@ Objects of different classes used interchangeably via a shared interface (duck t
 
 - [Code Cultivation — Object-Oriented Garden Systems](code-cultivation.md)
 - [Python's F-String for String Interpolation and Formatting](python-f-strings.md)
+- [Python __init__ vs __new__](python-init-vs-new.md)
 - Real Python: [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) (referenced by source)
