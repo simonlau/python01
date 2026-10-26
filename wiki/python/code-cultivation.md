@@ -80,3 +80,4 @@ A Python programming project (version 3.2) that builds a comprehensive digital g
 - [Executing Python Scripts With a Shebang](python-shebang.md)
 - [Python round() Function](python-round-function.md)
 - [Python range() Function](python-range-function.md)
+- [How to Print without newline in Python](python-print-without-newline.md)
