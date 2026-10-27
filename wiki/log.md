@@ -55,3 +55,7 @@
 - Disposition: Update
 - Raw: raw/python/2024-11-24-python-range.md
 - Updated: Python range() Function
+
+## [2026-10-27] ingest | Python @staticmethod
+- Disposition: New
+- Raw: raw/python/2026-01-20-python-staticmethod.md
