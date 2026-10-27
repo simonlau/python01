@@ -50,3 +50,8 @@
 - Disposition: Update
 - Raw: raw/python/2026-10-18-python-rounding.md
 - Updated: Python round() Function
+
+## [2026-10-27] ingest | Python range(): Represent Numerical Ranges
+- Disposition: Update
+- Raw: raw/python/2024-11-24-python-range.md
+- Updated: Python range() Function
