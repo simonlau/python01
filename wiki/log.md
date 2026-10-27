@@ -41,3 +41,7 @@
 ## [2026-10-26] ingest | Python __init__ vs __new__
 - Disposition: New
 - Raw: raw/python/2025-07-23-python-init-vs-new.md
+
+## [2026-10-27] ingest | Supercharge Your Classes With Python super()
+- Disposition: New
+- Raw: raw/python/2019-02-12-python-super.md

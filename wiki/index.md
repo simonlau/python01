@@ -14,3 +14,4 @@ Python programming projects and concepts.
 | [Python range() Function](python/python-range-function.md) | GeeksforGeeks reference on range(): syntax, start/stop/step, lazy iteration, and reverse ranges. | 2026-10-26 |
 | [How to Print without newline in Python](python/python-print-without-newline.md) | GeeksforGeeks guide to printing on one line: end parameter, join, unpacking, and sys.stdout.write. | 2026-10-26 |
 | [Python __init__ vs __new__](python/python-init-vs-new.md) | GeeksforGeeks comparison of __new__ (creation) and __init__ (initialization): order, return values, and usage. | 2026-10-26 |
+| [Supercharge Your Classes With Python super()](python/python-super.md) | Real Python tutorial on super(): single/multiple inheritance, MRO, cooperative design, and mixins. | 2026-10-27 |
