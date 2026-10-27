@@ -63,3 +63,9 @@
 ## [2026-10-27] ingest | @classmethod in Python
 - Disposition: New
 - Raw: raw/python/2026-06-08-python-classmethod.md
+
+## [2026-10-28] ingest | Encapsulation in Python
+- Disposition: New
+- Raw: raw/python/encapsulation-in-python.md
+- Updated: Code Cultivation — Object-Oriented Garden Systems
+- Updated: Python Classes: The Power of Object-Oriented Programming

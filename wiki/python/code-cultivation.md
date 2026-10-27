@@ -2,7 +2,7 @@
 
 > Sources: Unknown, Unknown
 > Raw: [code-cultivation-object-oriented-garden-systems.md](../../raw/python/code-cultivation-object-oriented-garden-systems.md)
-> Updated: 2026-10-25
+> Updated: 2026-10-28
 
 ## Overview
 
@@ -77,6 +77,7 @@ A Python programming project (version 3.2) that builds a comprehensive digital g
 ## See Also
 
 - [Python Classes: The Power of Object-Oriented Programming](python-classes.md)
+- [Encapsulation in Python](python-encapsulation.md)
 - [Executing Python Scripts With a Shebang](python-shebang.md)
 - [Python round() Function](python-round-function.md)
 - [Python range() Function](python-range-function.md)
