@@ -88,4 +88,5 @@ Objects of different classes used interchangeably via a shared interface (duck t
 - [Python __init__ vs __new__](python-init-vs-new.md)
 - [Supercharge Your Classes With Python super()](python-super.md)
 - [Python @staticmethod](python-staticmethod.md)
+- [Python @classmethod](python-classmethod.md)
 - Real Python: [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) (referenced by source)

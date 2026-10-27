@@ -59,3 +59,7 @@
 ## [2026-10-27] ingest | Python @staticmethod
 - Disposition: New
 - Raw: raw/python/2026-01-20-python-staticmethod.md
+
+## [2026-10-27] ingest | @classmethod in Python
+- Disposition: New
+- Raw: raw/python/2026-06-08-python-classmethod.md
