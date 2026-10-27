@@ -45,3 +45,8 @@
 ## [2026-10-27] ingest | Supercharge Your Classes With Python super()
 - Disposition: New
 - Raw: raw/python/2019-02-12-python-super.md
+
+## [2026-10-27] ingest | How to Round Numbers in Python
+- Disposition: Update
+- Raw: raw/python/2026-10-18-python-rounding.md
+- Updated: Python round() Function

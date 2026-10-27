@@ -1,8 +1,8 @@
 # Python round() Function
 
-> Sources: GeeksforGeeks, 2026-03-20
-> Raw: [2026-03-20-python-round-function.md](../../raw/python/2026-03-20-python-round-function.md)
-> Updated: 2026-10-26
+> Sources: GeeksforGeeks, 2026-03-20; David Amos, 2026-10-18
+> Raw: [2026-03-20-python-round-function.md](../../raw/python/2026-03-20-python-round-function.md); [2026-10-18-python-rounding.md](../../raw/python/2026-10-18-python-rounding.md)
+> Updated: 2026-10-27
 
 ## Overview
 
@@ -57,6 +57,34 @@ Works the same as for positives; ties use nearest-even:
 ## Practical Application
 
 Limiting decimal places in calculations: `b = 1/3` → `0.3333333333333333`; `round(b, 2)` → `0.33`.
+
+## Rounding Strategies (Real Python)
+
+Beyond the built-in `round()`, several strategies exist, each with bias characteristics:
+
+- **Truncation**: replace digits after a position with 0 (e.g., `12.345` → `12.3` at tenths). Symmetric around zero.
+- **Round up** (`math.ceil`): always toward positive infinity.
+- **Round down** (`math.floor`): always toward negative infinity.
+- **Rounding half up**: ties round up (e.g., `round_half_up(2.5)` → `3.0`, `round_half_up(1.25, 1)` → `1.3`).
+- **Rounding half down**: ties round down (e.g., `round_half_down(1.5)` → `1.0`).
+- **Rounding half away from zero**: ties round away from zero (e.g., `-1.5` → `-2.0`); mitigates bias with equal positive/negative ties.
+- **Rounding half to even** (banker's rounding): ties round to nearest even; Python's default, minimizes bias in large datasets.
+
+## Decimal Module
+
+For exact precision, use `decimal.Decimal` (create from strings to avoid float error). `Decimal.quantize()` or `round()` for rounding. Context precision default 28 digits; `decimal.getcontext().rounding` selects mode (`ROUND_HALF_EVEN`, `ROUND_UP`, `ROUND_DOWN`, `ROUND_CEILING`, `ROUND_FLOOR`, `ROUND_HALF_UP`, `ROUND_HALF_DOWN`, `ROUND_05UP`). `decimal.ROUND_05UP` rounds toward zero unless result ends in 0 or 5.
+
+## NumPy and pandas
+
+- `np.round(array, decimals=...)` / `array.round()` use round half to even.
+- `np.ceil`, `np.floor`, `np.trunc`, `np.rint` for integer rounding.
+- pandas `Series.round()` / `DataFrame.round()`; can pass a dict for per-column precision.
+
+## Best Practices
+
+- Store more precision than needed and round late.
+- Obey local currency regulations (e.g., EU rounding half away from zero for Euro conversion; Swedish rounding).
+- When in doubt, round ties to even.
 
 ## See Also
 
