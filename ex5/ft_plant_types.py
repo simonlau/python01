@@ -95,9 +95,11 @@ def main() -> None:
     rose.show()
     rose.bloom()
     rose.show()
+    print("=== Tree")
     tree = Tree("Oak", 200.0, 365, 5.0)
     tree.show()
     tree.produce_shade(200.0, 5.0)
+    print("=== Vegetable")
     tomato = Vegetable("Tomato", 5.0, 10, "April", 0)
     tomato.show()
     for _ in range(20):
