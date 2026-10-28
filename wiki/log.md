@@ -69,3 +69,9 @@
 - Raw: raw/python/encapsulation-in-python.md
 - Updated: Code Cultivation — Object-Oriented Garden Systems
 - Updated: Python Classes: The Power of Object-Oriented Programming
+
+## [2026-10-28] ingest | Final Names, Methods, and Classes in Python
+- Disposition: New
+- Raw: raw/python/final-names-methods-and-classes.md
+- Updated: Code Cultivation — Object-Oriented Garden Systems
+- Updated: Python Classes: The Power of Object-Oriented Programming

@@ -85,6 +85,7 @@ Objects of different classes used interchangeably via a shared interface (duck t
 
 - [Code Cultivation — Object-Oriented Garden Systems](code-cultivation.md)
 - [Encapsulation in Python](python-encapsulation.md)
+- [Final Names, Methods, and Classes in Python](python-final.md)
 - [Python's F-String for String Interpolation and Formatting](python-f-strings.md)
 - [Python __init__ vs __new__](python-init-vs-new.md)
 - [Supercharge Your Classes With Python super()](python-super.md)
