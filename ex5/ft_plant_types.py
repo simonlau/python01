@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
+# pyrefly: ignore-errors[missing-override-decorator]
+
+from typing import Final
+
 
 class Plant:
+    _name: Final[str]
+    _height: float
+    _days: int
+
     def __init__(self, name: str, height: float, days: int):
         self._name = name
         self._height = height
@@ -41,6 +49,9 @@ class Plant:
 
 
 class Flower(Plant):
+    _color: Final[str]
+    _bloom: bool
+
     def __init__(self, name: str, height: float, days: int, color: str):
         super().__init__(name, height, days)
         self._color = color
@@ -59,6 +70,8 @@ class Flower(Plant):
 
 
 class Tree(Plant):
+    _trunk_diameter: Final[float]
+
     def __init__(self, name: str, height: float, days: int, trunk_diameter: float):
         super().__init__(name, height, days)
         self._trunk_diameter = trunk_diameter
@@ -73,6 +86,9 @@ class Tree(Plant):
 
 
 class Vegetable(Plant):
+    _harvest_season: Final[str]
+    _nutritional_value: int
+
     def __init__(self, name: str, height: float, days: int, harvest_season: str, nutritional_value: int):
         super().__init__(name, height, days)
         self._harvest_season = harvest_season

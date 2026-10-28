@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
+from typing import Final
+
 
 class Plant:
+    _name: Final[str]
+    _height: float
+    _days: int
+
     def __init__(self, name: str, height: float, days: int):
         self._name = name
         self._height = height
