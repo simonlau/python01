@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def main() -> None:
     name = "Rose"
     height = 25
@@ -12,5 +13,5 @@ Age: {age} days
     print("=== End of Program ===")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

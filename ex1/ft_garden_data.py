@@ -13,10 +13,10 @@ class Plant:
         self.height = height
         self.days = days
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name}: {self.height}cm, {self.days} days old"
 
-    def show(self):
+    def show(self) -> None:
         print(self)
 
 
@@ -30,5 +30,5 @@ def main() -> None:
     cactus.show()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
