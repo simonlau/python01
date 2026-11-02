@@ -1,0 +1,40 @@
+{
+  "LANGUAGE": {
+    "0": [
+      "name",
+      "constant",
+      "f-string",
+      "function call",
+      "return",
+      "if",
+      "def",
+      "=",
+      "+",
+      "-",
+      ">",
+      "<",
+      "*",
+      "+=",
+      "==",
+      "print"
+    ],
+    "1": [
+      "class",
+      "attribute"
+    ],
+    "2": [
+      "for",
+      "range",
+      "round"
+    ],
+    "5": [
+      "super"
+    ],
+    "6": [
+      "staticmethod",
+      "classmethod"
+    ]
+  },
+  "IMPORTS": {},
+  "METHODS": {}
+}
