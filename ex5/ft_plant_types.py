@@ -15,7 +15,8 @@ class Plant:
         self._days = days
 
     def __str__(self) -> str:
-        return f"{self._name}: {round(self._height, 1)}cm, {self._days} days old"
+        height = round(self._height, 1)
+        return f"{self._name}: {height}cm, {self._days} days old"
 
     def show(self) -> None:
         print(self)
@@ -72,7 +73,9 @@ class Flower(Plant):
 class Tree(Plant):
     _trunk_diameter: Final[float]
 
-    def __init__(self, name: str, height: float, days: int, trunk_diameter: float):
+    def __init__(
+        self, name: str, height: float, days: int, trunk_diameter: float
+    ):
         super().__init__(name, height, days)
         self._trunk_diameter = trunk_diameter
 

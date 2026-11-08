@@ -13,7 +13,8 @@ class Plant:
         self._days = days
 
     def __str__(self) -> str:
-        return f"{self._name}: {round(self._height, 1)}cm, {self._days} days old"
+        height = round(self._height, 1)
+        return f"{self._name}: {height}cm, {self._days} days old"
 
     def show(self) -> None:
         print(self)

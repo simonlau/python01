@@ -5,7 +5,7 @@ from typing import Final
 
 
 class Plant:
-    class Stats:
+    class Stats:  # ruff: ignore[undocumented-public-nested-class]
         _num_grow: int
         _num_age: int
         _num_show: int
@@ -42,18 +42,19 @@ class Plant:
         self._stats = Plant.Stats()
 
     def __str__(self) -> str:
-        return f"{self._name}: {round(self._height, 1)}cm, {self._days} days old"
+        height = round(self._height, 1)
+        return f"{self._name}: {height}cm, {self._days} days old"
 
     @staticmethod
     def is_year_old(days: int) -> bool:
-        return days > 365
+        return days > 365  # ruff: ignore[magic-value-comparison]
 
     @classmethod
     def create(cls) -> "Plant":
         return cls("Unknown plant", 0.0, 0)
 
     def get_stats_str(self) -> str:
-        return self._stats.__str__()
+        return str(self._stats)
 
     def show(self) -> None:
         self._stats.add_show()
@@ -130,7 +131,7 @@ class Seed(Flower):
 
 
 class Tree(Plant):
-    class TreeStats(Plant.Stats):
+    class TreeStats(Plant.Stats):  # ruff: ignore[undocumented-public-nested-class]
         def __init__(self) -> None:
             super().__init__()
             self._num_shade = 0
@@ -144,14 +145,16 @@ class Tree(Plant):
 
     _trunk_diameter: Final[float]
 
-    def __init__(self, name: str, height: float, days: int, trunk_diameter: float):
+    def __init__(
+        self, name: str, height: float, days: int, trunk_diameter: float
+    ):
         super().__init__(name, height, days)
         self._trunk_diameter = trunk_diameter
         self._stats = Tree.TreeStats()
 
     def produce_shade(self, long: float, wide: float) -> None:
-        assert isinstance(self._stats, Tree.TreeStats)
-        self._stats.add_shade()  # pyrefly: ignore[missing-attribute]
+        assert isinstance(self._stats, Tree.TreeStats)  # ruff: ignore[assert]
+        self._stats.add_shade()
         msg = f"Tree {self._name} now producing a shade "
         size = f"of {long}cm long and {wide}cm wide"
         print(msg + size)
@@ -161,7 +164,7 @@ class Tree(Plant):
         print(f"Trunk diameter: {self._trunk_diameter}cm")
 
     def get_stats_str(self) -> str:
-        return self._stats.__str__()
+        return str(self._stats)
 
 
 class Vegetable(Plant):
