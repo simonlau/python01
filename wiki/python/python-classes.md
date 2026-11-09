@@ -2,7 +2,7 @@
 
 > Sources: Leodanis Pozo Ramos, 2026-04-01
 > Raw: [2026-04-01-python-classes-power-of-oop.md](../../raw/python/2026-04-01-python-classes-power-of-oop.md)
-> Updated: 2026-10-28
+> Updated: 2026-11-09
 
 ## Overview
 
@@ -84,6 +84,7 @@ Objects of different classes used interchangeably via a shared interface (duck t
 ## See Also
 
 - [Code Cultivation — Object-Oriented Garden Systems](code-cultivation.md)
+- [Data Classes in Python](python-data-classes.md)
 - [Encapsulation in Python](python-encapsulation.md)
 - [Final Names, Methods, and Classes in Python](python-final.md)
 - [Python's F-String for String Interpolation and Formatting](python-f-strings.md)

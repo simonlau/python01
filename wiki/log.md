@@ -75,3 +75,8 @@
 - Raw: raw/python/final-names-methods-and-classes.md
 - Updated: Code Cultivation — Object-Oriented Garden Systems
 - Updated: Python Classes: The Power of Object-Oriented Programming
+
+## [2026-11-09] ingest | Data Classes in Python
+- Disposition: New
+- Raw: raw/python/python-data-classes.md
+- Updated: Python Classes: The Power of Object-Oriented Programming
