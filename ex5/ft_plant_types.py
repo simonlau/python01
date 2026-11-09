@@ -15,8 +15,7 @@ class Plant:
         self._days = days
 
     def __str__(self) -> str:
-        height = round(self._height, 1)
-        return f"{self._name}: {height}cm, {self._days} days old"
+        return f"{self._name}: {self._height:.1f}cm, {self._days} days old"
 
     def show(self) -> None:
         print(self)
@@ -79,9 +78,9 @@ class Tree(Plant):
         super().__init__(name, height, days)
         self._trunk_diameter = trunk_diameter
 
-    def produce_shade(self, long: float, wide: float) -> None:
+    def produce_shade(self, length: float, width: float) -> None:
         msg = f"Tree {self._name} now producing a shade "
-        size = f"of {long}cm long and {wide}cm wide"
+        size = f"of {length}cm long and {width}cm wide"
         print(msg + size)
 
     def show(self) -> None:
