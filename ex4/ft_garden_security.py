@@ -13,8 +13,7 @@ class Plant:
         self._days = days
 
     def __str__(self) -> str:
-        height = round(self._height, 1)
-        return f"{self._name}: {height}cm, {self._days} days old"
+        return f"{self._name}: {self._height:.1f}cm, {self._days} days old"
 
     def show(self) -> None:
         print(self)
@@ -25,7 +24,6 @@ class Plant:
     def age(self, growth: float) -> None:
         self._height += growth
         self.grow()
-        self.show()
 
     def set_height(self, height: float) -> None:
         if height > 0:
