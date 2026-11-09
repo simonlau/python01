@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
-from typing import Final
+from dataclasses import dataclass
 
 
+@dataclass(slots=True)
 class Plant:
-    name: Final[str]
+    name: str
     height: float
     days: int
-
-    def __init__(self, name: str, height: float, days: int):
-        self.name = name
-        self.height = height
-        self.days = days
 
     def __str__(self) -> str:
         return f"{self.name}: {self.height}cm, {self.days} days old"
