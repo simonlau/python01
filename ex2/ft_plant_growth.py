@@ -1,20 +1,16 @@
 #!/usr/bin/env python3
 
-from typing import Final
+from dataclasses import dataclass
 
 
+@dataclass(slots=True)
 class Plant:
-    name: Final[str]
+    name: str
     height: float
     days: int
 
-    def __init__(self, name: str, height: float, days: int):
-        self.name = name
-        self.height = height
-        self.days = days
-
     def __str__(self) -> str:
-        return f"{self.name}: {round(self.height, 1)}cm, {self.days} days old"
+        return f"{self.name}: {self.height:.1f}cm, {self.days} days old"
 
     def show(self) -> None:
         print(self)
@@ -25,17 +21,20 @@ class Plant:
     def age(self, growth: float) -> None:
         self.height += growth
         self.grow()
-        self.show()
 
 
 def main() -> None:
     rose = Plant("Rose", 25, 30)
     print("=== Garden Plant Growth ===")
     rose.show()
-    for i in range(7):
+
+    num_days = 7
+    growth = 0.8
+    for i in range(num_days):
         print(f"=== Day {i + 1} ===")
-        rose.age(0.8)
-    print(f"Growth this week: {round(0.8 * 7, 1)}cm")
+        rose.age(growth)
+        rose.show()
+    print(f"Growth this week: {growth * num_days:.1f}cm")
 
 
 if __name__ == "__main__":
