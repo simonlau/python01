@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # pyrefly: ignore-errors[missing-override-decorator]
 
-from typing import Final
+from typing import Final, cast
 
 
 class Plant:
-    class Stats:  # ruff: ignore[undocumented-public-nested-class]
+    # ruff: ignore[undocumented-public-nested-class]
+    class Stats:
         _num_grow: int
         _num_age: int
         _num_show: int
@@ -42,12 +43,12 @@ class Plant:
         self._stats = Plant.Stats()
 
     def __str__(self) -> str:
-        height = round(self._height, 1)
-        return f"{self._name}: {height}cm, {self._days} days old"
+        return f"{self._name}: {self._height:.1f}cm, {self._days} days old"
 
     @staticmethod
     def is_year_old(days: int) -> bool:
-        return days > 365  # ruff: ignore[magic-value-comparison]
+        one_year = 365
+        return days > one_year
 
     @classmethod
     def create(cls) -> "Plant":
@@ -131,7 +132,8 @@ class Seed(Flower):
 
 
 class Tree(Plant):
-    class TreeStats(Plant.Stats):  # ruff: ignore[undocumented-public-nested-class]
+    # ruff: ignore[undocumented-public-nested-class]
+    class TreeStats(Plant.Stats):
         def __init__(self) -> None:
             super().__init__()
             self._num_shade = 0
@@ -153,8 +155,8 @@ class Tree(Plant):
         self._stats = Tree.TreeStats()
 
     def produce_shade(self, long: float, wide: float) -> None:
-        assert isinstance(self._stats, Tree.TreeStats)  # ruff: ignore[assert]
-        self._stats.add_shade()
+        stats = cast("Tree.TreeStats", self._stats)
+        stats.add_shade()
         msg = f"Tree {self._name} now producing a shade "
         size = f"of {long}cm long and {wide}cm wide"
         print(msg + size)
@@ -198,13 +200,7 @@ def show_stats(plant: Plant) -> None:
     print(plant.get_stats_str())
 
 
-def main() -> None:
-    print("=== Garden statistics ===")
-    print("=== Check year-old")
-    print(f"is 30 days more than a year? -> {Plant.is_year_old(30)}")
-    print(f"is 400 days more than a year? -> {Plant.is_year_old(400)}")
-    print("\n")
-
+def flower_demo() -> None:
     print("=== Flower")
     rose = Flower("Rose", 15.0, 10, "red")
     rose.show()
@@ -212,17 +208,21 @@ def main() -> None:
     rose.grow()
     rose.bloom()
     rose.show()
-    print("\n")
+    print(" ")
     show_stats(rose)
 
+
+def tree_demo() -> None:
     print("=== Tree")
     tree = Tree("Oak", 200.0, 365, 5.0)
     tree.show()
     show_stats(tree)
     tree.produce_shade(200.0, 5.0)
     show_stats(tree)
-    print("\n")
+    print(" ")
 
+
+def seed_demo() -> None:
     print("=== Seed")
     sunflower = Seed("Sunflower", 80.0, 45, "yellow")
     sunflower.show()
@@ -231,7 +231,19 @@ def main() -> None:
     sunflower.bloom()
     sunflower.show()
     show_stats(sunflower)
+    print(" ")
+
+
+def main() -> None:
+    print("=== Garden statistics ===")
+    print("=== Check year-old")
+    print(f"is 30 days more than a year? -> {Plant.is_year_old(30)}")
+    print(f"is 400 days more than a year? -> {Plant.is_year_old(400)}")
     print("\n")
+
+    flower_demo()
+    tree_demo()
+    seed_demo()
 
     print("=== Anonymous")
     unknown = Plant.create()
