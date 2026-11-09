@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
-from typing import Final
+from dataclasses import dataclass
 
 
+@dataclass(slots=True)
 class Plant:
-    name: Final[str]
+    name: str
     height: float
     days: int
 
-    def __init__(self, name: str, height: float, days: int):
-        self.name = name
-        self.height = height
-        self.days = days
-
     def __str__(self) -> str:
-        return f"{self.name}: {round(self.height, 1)}cm, {self.days} days old"
+        return f"{self.name}: {self.height:.1f}cm, {self.days} days old"
 
     def show(self) -> None:
         print(self)
@@ -24,7 +20,6 @@ class Plant:
     def age(self, growth: float) -> None:
         self.height += growth
         self.grow()
-        self.show()
 
 
 def main() -> None:
@@ -37,8 +32,7 @@ def main() -> None:
     ]
     print("=== Plant Factory Output ===")
     for plant in plants:
-        print("Created: ", end="")
-        plant.show()
+        print(f"Created: {plant}")
 
 
 if __name__ == "__main__":
