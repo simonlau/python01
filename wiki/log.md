@@ -80,3 +80,9 @@
 - Disposition: New
 - Raw: raw/python/python-data-classes.md
 - Updated: Python Classes: The Power of Object-Oriented Programming
+
+## [2026-11-09] ingest | Getters and Setters: Manage Attributes in Python
+- Disposition: New
+- Raw: raw/python/python-getter-setter.md
+- Updated: Encapsulation in Python
+- Updated: Python Classes: The Power of Object-Oriented Programming

@@ -2,7 +2,7 @@
 
 > Sources: William Imoh (roadmap.sh), Unknown
 > Raw: [encapsulation-in-python.md](../../raw/python/encapsulation-in-python.md)
-> Updated: 2026-10-28
+> Updated: 2026-11-09
 
 ## Overview
 
@@ -20,6 +20,7 @@ class BankAccount:  # Class with encapsulation
     def get_balance(self):  # Public method
         return self.__balance
 
+
 account = BankAccount(8000)
 print(account.get_balance())  # Access through method
 # print(account.__balance)    # Cannot be accessed directly
@@ -36,8 +37,8 @@ Attributes and methods are categorized as public, protected, or private:
 ```python
 class Person:
     def __init__(self):
-        self.name = "Cess"           # Public
-        self._age = 26               # Protected (single _)
+        self.name = "Cess"  # Public
+        self._age = 26  # Protected (single _)
         self.__ssn = "012-34-5678"  # Private (double __)
 ```
 
@@ -60,9 +61,10 @@ class Person:
         self.age += increment
         return f"New age: {self.age}"
 
+
 person1 = Person("Data science", 27)
-print(person1.field)          # Data science
-person1.age = 30              # Direct modification allowed
+print(person1.field)  # Data science
+person1.age = 30  # Direct modification allowed
 ```
 
 Use public attributes when external code needs direct read/write access without validation.
@@ -80,8 +82,9 @@ class Employee:
     def _calculate_bonus(self):
         return self._years_of_service * 0.1
 
+
 emp = Employee("Cess", 5)
-print(emp._years_of_service)   # 5 (accessible, but warned)
+print(emp._years_of_service)  # 5 (accessible, but warned)
 print(emp._calculate_bonus())  # 0.5
 ```
 
@@ -103,6 +106,7 @@ class SecureVault:
         print("Running internal security check...")
         return True
 
+
 vault = SecureVault(6666)
 print(vault.verify_password(6666))  # True
 # print(vault.__password)           # AttributeError
@@ -119,18 +123,19 @@ class Person:
         self._age = age
 
     @property
-    def age(self):          # Getter
+    def age(self):  # Getter
         return self._age
 
     @age.setter
-    def age(self, value):   # Setter
+    def age(self, value):  # Setter
         if value > 0:
             self._age = value
 
+
 person = Person(27)
-print(person.age)   # 27
+print(person.age)  # 27
 person.age = 50
-print(person.age)   # 50
+print(person.age)  # 50
 ```
 
 ## Practical Use Cases
@@ -154,6 +159,7 @@ print(person.age)   # 50
 
 ## See Also
 
+- [Getters and Setters: Manage Attributes in Python](python-getter-setter.md)
 - [Python Classes: The Power of Object-Oriented Programming](python-classes.md)
 - [Code Cultivation — Object-Oriented Garden Systems](code-cultivation.md)
 - [Supercharge Your Classes With Python super()](python-super.md)

@@ -7,8 +7,9 @@ Python programming projects and concepts.
 | Article | Summary | Updated |
 |---------|---------|---------|
 | [Code Cultivation — Object-Oriented Garden Systems](python/code-cultivation.md) | Python OOP project spec: six exercises building a digital garden system from basic scripts to inheritance and analytics. | 2026-10-28 |
-| [Encapsulation in Python](python/python-encapsulation.md) | Roadmap.sh guide to encapsulation: public/protected/private attributes, name mangling, getters/setters, @property, and practical use cases. | 2026-10-28 |
+| [Encapsulation in Python](python/python-encapsulation.md) | Roadmap.sh guide to encapsulation: public/protected/private attributes, name mangling, getters/setters, @property, and practical use cases. | 2026-11-09 |
 | [Final Names, Methods, and Classes in Python](python/python-final.md) | mypy documentation on Final names, @final methods, and @final classes: preventing reassignment, overriding, and subclassing. | 2026-10-28 |
+| [Getters and Setters: Manage Attributes in Python](python/python-getter-setter.md) | Real Python guide to getter/setter methods, properties, descriptors, and when to use each. | 2026-11-09 |
 | [Data Classes in Python](python/python-data-classes.md) | Real Python guide to data classes: @dataclass, defaults, field(), ordering, immutability, inheritance, and slots. | 2026-11-09 |
 | [Python Classes: The Power of Object-Oriented Programming](python/python-classes.md) | Comprehensive Real Python tutorial on classes, attributes, methods, inheritance, composition, ABCs, and polymorphism. | 2026-11-09 |
 | [Python's F-String for String Interpolation and Formatting](python/python-f-strings.md) | Real Python tutorial on f-strings: interpolation, formatting mini-language, performance, 3.12 improvements, and when to use traditional tools. | 2026-10-25 |
