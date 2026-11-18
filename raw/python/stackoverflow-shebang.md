@@ -12,7 +12,7 @@ Tags: python, shell, python-3.x, shebang
 
 Should I put the shebang in my Python scripts? In what form?
 
-`#!/usr/bin/env python 
+`#!/usr/bin/env python
 `
 
 or
@@ -113,7 +113,7 @@ Usually it would be better to establish a Python virtual environment, in which c
 
 ### Answer (score 17) by meson10 — 2011-08-02
 
-The purpose of shebang is for the script to recognize the interpreter type when you want to execute the script from the shell. 
+The purpose of shebang is for the script to recognize the interpreter type when you want to execute the script from the shell.
 Mostly, and not always, you execute scripts by supplying the interpreter externally.
 Example usage: `python-x.x script.py`
 
@@ -149,7 +149,7 @@ You should add a shebang if the script is intended to be executable. You should 
 
 ### Answer (score 11) by Goblinhack — 2019-09-23
 
-If you have different modules installed and need to use a specific 
+If you have different modules installed and need to use a specific
 python install, then shebang appears to be limited at first. However,
 you can do tricks like the below to allow the shebang to be invoked
 first as a shell script and then choose python. This is very flexible
@@ -276,7 +276,7 @@ python filename.py
 
 ```
 
-To make it a command, copy it to drop the .py extension.  
+To make it a command, copy it to drop the .py extension.
 
 ```
 cp filename.py filename
@@ -297,7 +297,7 @@ To test it, use:
 
 ```
 
-Best practice is to move it somewhere in your $PATH so all you need to type is the filename itself. 
+Best practice is to move it somewhere in your $PATH so all you need to type is the filename itself.
 
 ```
 sudo cp filename /usr/sbin
@@ -345,7 +345,7 @@ If your code is known to be version specific, it will help others to find why yo
 If you want to make your file executable you must add shebang line to your scripts.
 
 ```
-#!/usr/bin/env python3 
+#!/usr/bin/env python3
 
 ```
 
@@ -354,7 +354,7 @@ is better option in the sense that this will not be dependent on specific distro
 whereas
 
 ```
-#!/usr/local/bin/python3 
+#!/usr/local/bin/python3
 
 ```
 
@@ -396,7 +396,7 @@ To generalize we can use:
 
 ```
 
-or 
+or
 
 ```
 #!/bin/env

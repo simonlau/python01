@@ -50,7 +50,7 @@ Get Python Tricks »
 
 🔒 No spam. Unsubscribe any time.
 
-[Browse Topics](/tutorials/all/) [Guided Learning Paths](/learning-paths/)  
+[Browse Topics](/tutorials/all/) [Guided Learning Paths](/learning-paths/)
 [ Basics](/search?level=basics&_from=sidebar_level) [ Intermediate](/search?level=intermediate&_from=sidebar_level) [ Advanced](/search?level=advanced&_from=sidebar_level)
 
 ---
@@ -3318,7 +3318,7 @@ Master Real-World Python Skills With Unlimited Access to Real Python
 
 [Level Up Your Python Skills »](/account/join/?utm_source=rp_article_footer&utm_content=python-classes)
 
-Master Real-World Python Skills  
+Master Real-World Python Skills
 With Unlimited Access to Real Python
 
 ![Locked learning resources](/static/videos/lesson-locked.f5105cfd26db.svg)
@@ -3483,5 +3483,5 @@ Send Code »
 
 Happy Pythoning!
 
-© 2012–2026 DevCademy Media Inc. DBA Real Python. All rights reserved.  
+© 2012–2026 DevCademy Media Inc. DBA Real Python. All rights reserved.
 REALPYTHON™ is a trademark of DevCademy Media Inc. [ ![Real Python - Online Python Training (logo)](/static/real-python-logo-primary.973743b6d39d.svg)](/)

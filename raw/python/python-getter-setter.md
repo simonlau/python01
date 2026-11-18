@@ -849,7 +849,7 @@ Master Real-World Python Skills With Unlimited Access to Real Python
 
 [Level Up Your Python Skills »](/account/join/?utm_source=rp_article_footer&utm_content=python-getter-setter)
 
-Master Real-World Python Skills  
+Master Real-World Python Skills
 With Unlimited Access to Real Python
 
 ![Locked learning resources](/static/videos/lesson-locked.f5105cfd26db.svg)
@@ -897,4 +897,3 @@ Related Tutorials:
 - [Python range(): Represent Numerical Ranges](/python-range/?utm_source=realpython&utm_medium=web&utm_campaign=related-post&utm_content=python-getter-setter)
 
 - [Getting Started With Testing in Python](/python-testing/?utm_source=realpython&utm_medium=web&utm_campaign=related-post&utm_content=python-getter-setter)
-

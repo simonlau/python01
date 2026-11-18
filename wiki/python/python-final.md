@@ -17,10 +17,12 @@ from typing import Final
 
 RATE: Final = 3_000
 
+
 class Base:
     DEFAULT_ID: Final = 0
 
-RATE = 300           # Error: can't assign to final attribute
+
+RATE = 300  # Error: can't assign to final attribute
 Base.DEFAULT_ID = 1  # Error: can't override a final attribute
 ```
 
@@ -44,12 +46,12 @@ Base.DEFAULT_ID = 1  # Error: can't override a final attribute
 - `Final` prevents re-binding, not mutation. Use immutable ABCs/containers to prevent mutation:
 
 ```python
-x: Final = ['a', 'b']
-x.append('c')          # OK
+x: Final = ["a", "b"]
+x.append("c")  # OK
 
-y: Final[Sequence[str]] = ['a', 'b']
-y.append('x')          # Error: Sequence is immutable
-z: Final = ('a', 'b')  # Also an option
+y: Final[Sequence[str]] = ["a", "b"]
+y.append("x")  # Error: Sequence is immutable
+z: Final = ("a", "b")  # Also an option
 ```
 
 ## Final Methods
@@ -59,10 +61,11 @@ Use `typing.final` to prevent a method from being overridden in a subclass. It w
 ```python
 from typing import final
 
+
 class Base:
     @final
-    def common_name(self) -> None:
-        ...
+    def common_name(self) -> None: ...
+
 
 class Derived(Base):
     def common_name(self) -> None:  # Error: cannot override a final method
@@ -78,9 +81,10 @@ Apply `typing.final` to a class to indicate it should not be subclassed. It is a
 ```python
 from typing import final
 
+
 @final
-class Leaf:
-    ...
+class Leaf: ...
+
 
 class MyLeaf(Leaf):  # Error: Leaf can't be subclassed
     ...

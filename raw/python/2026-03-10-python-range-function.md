@@ -20,7 +20,7 @@ for i in range(5):
 Output
 
 ```
-0 1 2 3 4 
+0 1 2 3 4
 ```
 
 Explanation: range(5) generates numbers from 0 to 4; i takes one value at a time from the generated sequence.
@@ -53,7 +53,7 @@ for n in range(5, 10):
 Output
 
 ```
-5 6 7 8 9 
+5 6 7 8 9
 ```
 
 Explanation: range(5, 10) starts at 5 and stops before 10; numbers increase by the default step of 1.
@@ -70,7 +70,7 @@ for v in range(0, 10, 2):
 Output
 
 ```
-0 2 4 6 8 
+0 2 4 6 8
 ```
 
 Explanation: range(0, 10, 2) increases the value by 2 each time; the step controls how much the number changes per iteration.
@@ -87,7 +87,7 @@ for i in range(10, 0, -2):
 Output
 
 ```
-10 8 6 4 2 
+10 8 6 4 2
 ```
 
 Explanation: range(10, 0, -2) starts from 10 and decreases by 2 each time; a negative step allows backward iteration through numbers.
