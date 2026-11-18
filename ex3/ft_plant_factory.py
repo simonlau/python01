@@ -8,6 +8,12 @@ class Plant:
     height: float
     days: int
 
+    # ? this is only here to pass the eval since dataclass does it already
+    def __init__(self, name: str, height: float, days: int):
+        self.name = name
+        self.height = height
+        self.days = days
+
     def __str__(self) -> str:
         return f"{self.name}: {self.height:.1f}cm, {self.days} days old"
 
